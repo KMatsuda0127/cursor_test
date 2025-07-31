@@ -3,7 +3,7 @@
   "name": "Chrome Extension",
   "version": "1.0.0",
   "description": "A Chrome extension built with React 19, TypeScript, and Vite",
-  "permissions": ["storage", "activeTab"],
+  "permissions": ["storage", "activeTab", "tabs"],
   "action": {
     "default_popup": "popup.html",
     "default_title": "Chrome Extension"
