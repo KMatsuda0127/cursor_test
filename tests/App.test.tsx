@@ -3,9 +3,11 @@ import { render, screen } from '@testing-library/react';
 import App from '@/App';
 
 describe('App', () => {
-  it('renders without crashing', () => {
+  it('renders without crashing and displays updated title', () => {
     render(<App />);
-    expect(screen.getByText('Chrome Extension')).toBeInTheDocument();
+    expect(
+      screen.getByText('Chrome extension!!!!!!!!!!!!!!!!!!!')
+    ).toBeInTheDocument();
   });
 
   it('displays welcome message', () => {
